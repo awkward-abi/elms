@@ -3,13 +3,20 @@ body{
     padding: 0;
     background: #fff;
     text-decoration: none;
-    font-family: 'RobotoLightNew', 'Ubuntu', helvetica, sans-serif;
     width: 1358.700px;
     height: 2056.560px;
 }
 
+html, body, button{
+    font-family: 'Roboto', 'Ubuntu', helvetica, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    font-weight: 300;
+}
+
 nav {
-    position: fixed;
+    position: relative;
     top: 0;
     max-width: 100%;
     display: flex;
@@ -70,35 +77,33 @@ a {
     padding: 6px 15px;
 }
 
-.sliderHolder{
-    width: 500px;
-    height: 300px;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: 20vh;
-    text-align: center;
+.sliderHolder {
+    position: relative;
+    width: 100%;
+    height: 642px;
     overflow: hidden;
 }
 
-.image-container {
-    width: 1500px;
-    background-color: pink;
-    height: 300px;
-    clear: both;
-    position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
+.sliderImg {
+    width: 100vw;
+    height: auto;
 }
 
-.slide {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
+.panel2Holder{
+    display: flex;
+    margin: 10vh 0 10vh 0;
 }
 
+.block{
+    margin: 0 2vw 0px 2vw;
+    justify-content: center;
+}
 
+.block p{
+    text-align: center;
+}
 
-
+.block > img{
+    width: 15vw;
+    height: auto;
+}
